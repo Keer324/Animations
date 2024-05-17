@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #box1 {
+            width: 250px;
+            height: 250px;
+            background: red;
+            font-size: 225px;
+            text-align: center;
+
+            animation: myColorChange;
+            animation-play-state: running;
+            animation-iteration-count: infinite;
+            animation-delay: 0s;
+            animation-timing-function: linear;
+            animation-duration: 3s;
+        }
+
+        @keyframes mySlide {
+            from {
+                margin-left: 100%;
+            }
+
+            to {
+                margin-left: 0%;
+            }
+        }
+
+        @keyframes myRotate {
+            100% {
+                transform: rotateZ(180deg);
+            }
+        }
+
+        @keyframes myOpacity {
+            50% {
+                opacity: 0;
+            }
+
+            ;
+        }
+
+        @keyframes myScale {
+            50% {
+                transform: scale(0.5, 0.5);
+            }
+
+            ;
+        }
+
+        @keyframes myColorChange {
+            0% {
+                background-color: red;
+            }
+
+            20% {
+                background-color: orange;
+            }
+
+            40% {
+                background-color: yellow;
+            }
+
+            60% {
+                background-color: green;
+            }
+
+            80% {
+                background-color: blue;
+            }
+
+            100% {
+                background-color: purple;
+            }
+
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="box1">
+        Hi
+    </div>
+</body>
+
+</html>
