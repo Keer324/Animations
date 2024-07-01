@@ -9,15 +9,16 @@
             width: 250px;
             height: 250px;
             background: red;
-            font-size: 225px;
+            font-size: 5rem;
             text-align: center;
+            border-radius: 50px;
 
             animation: myColorChange;
             animation-play-state: running;
             animation-iteration-count: infinite;
             animation-delay: 0s;
-            animation-timing-function: linear;
-            animation-duration: 3s;
+            animation-timing-function:linear;
+            animation-duration: 2s;
         }
 
         @keyframes mySlide {
@@ -32,7 +33,7 @@
 
         @keyframes myRotate {
             100% {
-                transform: rotateZ(180deg);
+                transform: rotateZ(90deg);
             }
         }
 
@@ -63,18 +64,29 @@
 
             40% {
                 background-color: yellow;
+                margin-top: 10%;
+                transform: rotateZ(90deg);
+            }
+            50%{
+                background-color: blue;
+                transform: rotate(45deg);
             }
 
             60% {
                 background-color: green;
+                transform: scale(0.5, 0.5);
+
             }
 
             80% {
                 background-color: blue;
+                transform: rotateZ(90deg);
             }
 
             100% {
                 background-color: purple;
+                transform: rotateZ(180deg);
+                margin-left: 100%;
             }
 
         }
@@ -84,7 +96,10 @@
 
 <body>
     <div id="box1">
-        Hi
+
+        Bye &#128075;
+        Hi Heloo
+
     </div>
 </body>
 
